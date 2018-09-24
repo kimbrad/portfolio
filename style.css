@@ -1,0 +1,246 @@
+/* font */
+/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC"); */
+
+* box {
+    box-sizing: border-box;
+}
+nav {
+    /* color: grey; */
+    color: orange;
+    text-align: center;
+}
+
+body {
+    font-family: 'Playfair Display SC', serif;
+    /* background: body-background; */
+    /* background-color: black; */
+    /* color: red; */
+    /* color: orange; */
+    text-align: center;
+    font-size: 1.2rem;
+    /* line-height: 1.45; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* padding: 10px 20px 10px 20px; */
+  
+}
+div.my-name {
+    text-align: center;
+}
+
+.pointer {cursor: pointer;}
+
+.portfolio.html {
+    text-align: justify;
+}
+
+@media (min-width: 100px) {
+    margin-bottom: 5em;
+}
+/* $accent; orange; */
+
+/* a.portfolio-header {
+    text-align: justify;
+    
+} */
+
+.main-content {
+    padding: 5%;
+    flex: 1 1 100%;
+    min-height: 100vh;
+    /* min-width: 100vh; */
+}
+
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: [] repeat(6, 1fr);
+    grid-template-columns: [] repeat(5, 1fr);
+    grid-gap: 20px;
+    
+}
+
+.portfolio-item {
+    background-color: lightblue;
+    /* background: accent; */
+    /* background: black; */
+    /* color: orange; */
+    font-weight: fold-bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+    opacity: 0.8;
+    
+}
+
+
+
+.mediumsquare {
+    grid-row: span 2;
+    grid-column: span 2;
+  
+}
+
+.largesquare {
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.tallsquare {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.widesquare {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.one:hover {
+    background-image: url(https://images.unsplash.com/photo-1537529242089-ead59ac2540e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81179c803a48f5adca9e17f9657074fd&auto=format&fit=crop&w=933&q=80);
+   background-color: red;
+ 
+  background-blend-mode: multiply;
+  
+ 
+  background-position: center;  
+ 
+  
+  display: block;
+  
+  
+/* &::before {
+
+    content: '',
+    display: block;
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   transition: all ease-in-out 300ms;
+  } */
+}
+
+
+.project-two:hover {
+    background-image: url(https://media1.tenor.com/images/30754eaff6eff4cb23cbb51319b56738/tenor.gif?itemid=5623874);
+    background-blend-mode: multiply;
+    background-color: aliceblue;
+    background-position: center;
+    display: block;
+   
+}
+
+.project-three:hover {
+    background-image: url(https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=15be9f9073988c075caa018991009b74&auto=format&fit=crop&w=1950&q=80);
+    background-position: center;
+    background-blend-mode: multiply;
+    display: block;
+}
+
+.project-four:hover {
+    background-image: url(https://images.unsplash.com/photo-1481246516418-7250f352b06f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b473645ef95f1e1beddf63add5aea907&auto=format&fit=crop&w=800&q=60);
+    background-position: center;
+    background-blend-mode: multiply;
+    display: block;
+}
+.a.about-me {
+    background-color: darkblue;
+}
+
+
+/* ABOUT ME */
+.about-me-content {
+    background-color:dark;
+    text-align: left;
+    margin: auto;
+    color: lightcoral;
+}
+p {
+    text-align: left;
+}
+.me {
+    display: grid;
+    height: 100%;
+    /* grid-template-rows: [] repeat(2, 1fr); */
+    grid-template-columns: [] repeat(2, 1fr);
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 400px auto auto;
+    grid-gap: 20px;
+    
+}
+.my-photo {
+    background-image: url(https://media.licdn.com/dms/image/C4D03AQFuruPOfWjY_w/profile-displayphoto-shrink_200_200/0?e=1543449600&v=beta&t=PPHrtpVvH9o0CLAtwh_oXx7uVucsOOUI8IstFiIRsx8);
+    /* background-image: url("portfolioImg.jpg"); */
+    background-position: center;
+    display: block;
+    size: 100%;
+}
+
+
+#linkedinicon{
+    /* color:rgb(14, 118, 168) */
+    color: rgb(255, 0, 0);
+}
+  
+#twittericon{
+    color:rgb(29, 202, 255)
+}
+  
+#freecodecampicon{
+    color:rgb(255, 0, 0)
+}
+  
+#codepenicon{
+    color:rgb(0, 0, 0)
+}
+
+/* Contact Page */
+
+.footer {
+    background-color: lightblue;
+    color: white;
+    width: 100%;
+    margin: auto;
+    font-size:1.0em;
+    text-align: center;
+    opacity:.95;
+    padding-top:.01%;
+    padding-bottom:.5%;
+    display: flex;
+    /* position: absolute, bottom; */
+}
+
+contact {
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* HOME PAGE */
+
+.my-name {
+text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+.btnList {
+    display: grid;
+    height: 100%;
+    grid-template-rows: [] repeat(1);
+    grid-template-columns: [] repeat(1);
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 400px auto auto; */
+    grid-gap: 20px;
+    
+}
