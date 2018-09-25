@@ -20,7 +20,7 @@ body {
     text-align: center;
     font-size: 1.2rem;
     /* line-height: 1.45; */
-    display: flex;
+    /* display: flex; */
     /* flex-wrap: wrap; */
     /* padding: 10px 20px 10px 20px; */
     text-decoration: none;
@@ -50,18 +50,20 @@ body {
     flex: 1 1 100%;
     min-height: 100vh;
     /* min-width: 100vh; */
+    
 }
 
 .portfolio {
     display: grid;
     height: 100%;
-    grid-template-rows: [] repeat(6, 1fr);
-    grid-template-columns: [] repeat(5, 1fr);
+    grid-template-rows: [] repeat(5, 80px);
+    grid-template-columns: [] repeat(5, 200px);
     grid-gap: 20px;
     
 }
 
 .portfolio-item {
+    /* display: flex; */
     background-color: lightblue;
     /* background: accent; */
     /* background: black; */
@@ -225,6 +227,7 @@ body {
 }
 
 .btnList {
+    margin: 150px 0;
     display: grid;
     height: 100%;
     grid-template-rows: [] repeat(1);
