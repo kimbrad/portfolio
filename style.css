@@ -8,16 +8,25 @@ a {
     color: #386FA4;
     text-align: center;
     text-decoration: none;
+    padding: 0;
+    /* text-transform: normal; */
+    /* letter-spacing: normal; */
+    /* line-height: 5.3em; */
+    margin-top: 50px;
+}
+
+div {
+    color: #386FA4;
+    margin: top;
+}
+
+.profession {
+    letter-spacing: normal;
+	line-height: 1.3em;
 }
 
 body {
     font-family: 'Playfair Display SC', serif;
-    /* color: black; */
-    /* background-image: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-120534.png); */
-    /* background: body-background; */
-    /* background-color: #133C55; */
-    /* color: red; */
-    /* color: orange; */
     text-align: center;
     font-size: 1.2rem;
     /* line-height: 1.45; */
@@ -27,7 +36,7 @@ body {
     text-decoration: none;
 }
 .my-name {
-    color: red;
+    /* color: red; */
     text-decoration: none;
 }
 
@@ -55,20 +64,22 @@ body {
     
 }
 
-/* PORTFOLIO PAGE */
+/* PORTFOLIO PAGE ===================================================================================================================================================== */
 
 .portfolio {
     display: grid;
     height: 100%;
-    grid-template-rows: [] repeat(5, minmax(80px, 1fr));
-    grid-template-columns: [] repeat(5, minmax(80px, 1fr));
+    grid-template-rows: [] repeat(8, minmax(80px, 1fr));
+    grid-template-columns: [] repeat(5, minmax(20px, 1fr));
     grid-gap: 20px;
+    text-align: center;
     
 }
 
 .portfolio-item {
     display: flex;
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    background-color: lightgray;
     /* background: accent; */
     /* background: black; */
     /* color: orange; */
@@ -87,7 +98,7 @@ body {
 
 
 .mediumsquare {
-    grid-row: span 2;
+    grid-row: span 3;
     grid-column: span 2;
   
 }
@@ -98,29 +109,33 @@ body {
 }
 
 .tallsquare {
-    grid-row: span 3;
+    grid-row: span 5;
     grid-column: span 2;
 }
 
 .widesquare {
-    grid-row: span 2;
+    grid-row: span 5;
     grid-column: span 3;
 }
 
 .one:hover {
-    background-image: url(https://images.unsplash.com/photo-1537529242089-ead59ac2540e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81179c803a48f5adca9e17f9657074fd&auto=format&fit=crop&w=933&q=80);
-    background-color: red;
+    background-image: url('/Users/kimbrad/wdi/portfolio-page/img.jpg/gears-memory_resized 1.jpg');
+    /* background-image: url(http://www.guntherpublications.com/core/wp-content/uploads/2018/04/0b17e73f9c761b91f0e93a3ca98e9359resize=width:200,height:200.jpg); */
+    /* background-image: url(https://images.unsplash.com/photo-1537529242089-ead59ac2540e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81179c803a48f5adca9e17f9657074fd&auto=format&fit=crop&w=933&q=80); */
+    /* background-color: red; */
     background-blend-mode: multiply;
     background-position: center;  
     display: block;
-    opacity: 1.0;
+    width: auto;
+    height: auto;
+    /* opacity: 1.0; */
 }
 
 
 .project-two:hover {
     background-image: url(https://media1.tenor.com/images/30754eaff6eff4cb23cbb51319b56738/tenor.gif?itemid=5623874);
     background-blend-mode: multiply;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     background-position: center;
     display: block;
    
@@ -139,9 +154,9 @@ body {
     background-blend-mode: multiply;
     display: block;
 }
-.a.about-me {
+/* a.about-me {
     background-color: greenyellow;
-}
+} */
 
 /* ======================================================================================================================================================================================================== */
 
@@ -153,39 +168,51 @@ body {
     margin: auto;
     color: #386FA4;
 }
+
 p {
     text-align: left;
 }
+
 .bio {
     display: grid;
     /* height: 100%; */
     grid-template-rows: [] repeat(1, minmax(20px, 1fr));
-    grid-template-columns: [] repeat(1, minmax(20px, 1fr));
+    grid-template-columns: [] repeat(2, minmax(20px, 1fr));
     /* grid-template-columns: 1fr; */
     grid-template-rows: 400px auto auto;
     grid-gap: 20px;
-    /* grid-row: span 2; */
+    grid-row: span 2;
     /* grid-column: 2; */
     /* text-align: right; */
-    height: 100vh;
+    /* height: 100vh; */
     /* width: 50vh; */
 }
 
 .my-photo {
-    background-image: url(https://media.licdn.com/dms/image/C4D03AQFuruPOfWjY_w/profile-displayphoto-shrink_200_200/0?e=1543449600&v=beta&t=PPHrtpVvH9o0CLAtwh_oXx7uVucsOOUI8IstFiIRsx8);
-    grid-template-rows: [] repeat(1, minmax(20px, 1fr));
-    grid-template-columns: [] repeat(1, minmax(20px, 1fr));
+    background-image: url('/Users/kimbrad/wdi/portfolio-page/img.jpg/portfolioImg_(1).jpg');
+    /* background-image: url('/Users/kimbrad/wdi/portfolio-page/img.jpg/portfolioImg.jpg'); */
+    /* background-image: url(https://media.licdn.com/dms/image/C4D03AQFuruPOfWjY_w/profile-displayphoto-shrink_200_200/0?e=1543449600&v=beta&t=PPHrtpVvH9o0CLAtwh_oXx7uVucsOOUI8IstFiIRsx8); */
+    grid-template-rows: [] repeat(1, minmax(10px, 1fr));
+    grid-template-columns: [] repeat(1, minmax(10px, 1fr));
     /* background-image: url("portfolioImg.jpg"); */
     background-position: center;
     /* display: block; */
-    display: flex;
+    /* display: flex; */
     /* size: 50%; */
-    height: 50vh;
+    height: 68vh;
     width: 50vh;
+    /* height: 50%; */
+    /* width: auto; */
+    /* margin: right; */
+    /* padding: 0; */
+    flex-wrap: wrap;
     /* grid-row: span 1;
     grid-column: span 1; */
     /* text-align: center; */
+    /* max-width: 100%; */
+    /* height: auto; */
 }
+
 /* .my-photo {
     grid-row: span 1;
     grid-column: span 1;
@@ -225,7 +252,7 @@ p {
     /* position: absolute, bottom; */
 }
 
-contact {
+.contact {
     text-align: right;
     display: flex;
     flex-wrap: wrap;
@@ -249,6 +276,8 @@ body {
     grid-template-columns: [] repeat(1);
     /* grid-template-columns: 1fr; */
     /* grid-template-rows: 400px auto auto; */
+    text-align: center;
+    /* margin-top: auto; */
     grid-gap: 20px;
     
 }
