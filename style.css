@@ -4,14 +4,12 @@
 * box {
     box-sizing: border-box;
 }
+
 a {
     color: #386FA4;
     text-align: center;
     text-decoration: none;
     padding: 0;
-    /* text-transform: normal; */
-    /* letter-spacing: normal; */
-    /* line-height: 5.3em; */
     margin-top: 50px;
 }
 
@@ -29,16 +27,12 @@ body {
     font-family: 'Playfair Display SC', serif;
     text-align: center;
     font-size: 1.2rem;
-    /* line-height: 1.45; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* padding: 10px 20px 10px 20px; */
     text-decoration: none;
 }
-.my-name {
-    /* color: red; */
+/* .my-name {
+    color: red;
     text-decoration: none;
-}
+} */
 
 .pointer {cursor: pointer;}
 
@@ -46,9 +40,9 @@ body {
     text-align: justify;
 } */
 
-@media (min-width: 100px) {
+/* @media (min-width: 100px) {
     margin-bottom: 5em;
-}
+} */
 /* $accent; orange; */
 
 /* a.portfolio-header {
@@ -65,6 +59,14 @@ body {
 }
 
 /* PORTFOLIO PAGE ===================================================================================================================================================== */
+
+h1 {
+    text-align: center;
+}
+
+.nav-container {
+    text-align: center;
+}
 
 .portfolio {
     display: grid;
@@ -162,11 +164,15 @@ body {
 
 /* ABOUT ME */
 
-.about-me-content {
-    background-color:dark;
-    text-align: left;
+.about-me-container {
+    background-color: dark;
+    /* text-align: left; */
     margin: auto;
     color: #386FA4;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-content: flex-start;
+
 }
 
 p {
@@ -175,67 +181,51 @@ p {
 
 .bio {
     display: grid;
-    /* height: 100%; */
-    grid-template-rows: [] repeat(1, minmax(20px, 1fr));
-    grid-template-columns: [] repeat(2, minmax(20px, 1fr));
-    /* grid-template-columns: 1fr; */
     grid-template-rows: 400px auto auto;
     grid-gap: 20px;
     grid-row: span 2;
-    /* grid-column: 2; */
-    /* text-align: right; */
-    /* height: 100vh; */
-    /* width: 50vh; */
-}
-
-.my-photo {
-    background-image: url('/Users/kimbrad/wdi/portfolio-page/img.jpg/portfolioImg_(1).jpg');
-    /* background-image: url('/Users/kimbrad/wdi/portfolio-page/img.jpg/portfolioImg.jpg'); */
-    /* background-image: url(https://media.licdn.com/dms/image/C4D03AQFuruPOfWjY_w/profile-displayphoto-shrink_200_200/0?e=1543449600&v=beta&t=PPHrtpVvH9o0CLAtwh_oXx7uVucsOOUI8IstFiIRsx8); */
-    grid-template-rows: [] repeat(1, minmax(10px, 1fr));
-    grid-template-columns: [] repeat(1, minmax(10px, 1fr));
-    /* background-image: url("portfolioImg.jpg"); */
-    background-position: center;
-    /* display: block; */
-    /* display: flex; */
-    /* size: 50%; */
-    height: 68vh;
-    width: 50vh;
-    /* height: 50%; */
-    /* width: auto; */
-    /* margin: right; */
-    /* padding: 0; */
+    display: flex;
     flex-wrap: wrap;
-    /* grid-row: span 1;
-    grid-column: span 1; */
-    /* text-align: center; */
-    /* max-width: 100%; */
-    /* height: auto; */
+    text-align: left;
+    padding-left: 10px;
 }
 
-/* .my-photo {
-    grid-row: span 1;
-    grid-column: span 1;
-} */
+@media (min-width: 300px) {
+    /* margin-bottom: 5em; */
+    .my-photo {
+        background-image: url('/Users/kimbrad/wdi/portfolio-page/img.jpg/portfolioImg_(1).jpg');
+        grid-template-rows: [] repeat(1, minmax(10px, 1fr));
+        grid-template-columns: [] repeat(1, minmax(10px, 1fr));
+        background-position: center;
+        height: 68vh;
+        width: 300vh;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-radius: 3%;       
+}
 
+}
+
+
+
+#email {
+    color: #1C78C0;
+    
+}
 
 #linkedinicon{
-    /* color:rgb(14, 118, 168) */
-    color: rgb(255, 0, 0);
+    color: #007bb5;
 }
   
+
+#github-icon{
+    color: #000000;
+}
+
 #twittericon{
     color:rgb(29, 202, 255)
 }
   
-#freecodecampicon{
-    color:rgb(255, 0, 0)
-}
-  
-#codepenicon{
-    color:rgb(0, 0, 0)
-}
-
 /* Contact Page */
 
 .footer {
@@ -246,10 +236,9 @@ p {
     font-size:1.0em;
     text-align: center;
     opacity:.95;
-    padding-top:.01%;
     padding-bottom:.5%;
     display: flex;
-    /* position: absolute, bottom; */
+   justify-content: center;
 }
 
 .contact {
@@ -268,16 +257,24 @@ body {
     text-align: center;
 }
 
+
+
 .btnList {
     margin: 150px 0;
     display: grid;
-    height: 100%;
-    grid-template-rows: [] repeat(1);
-    grid-template-columns: [] repeat(1);
+    height: 50%;
+    /* grid-template-rows: [] repeat(1, minmax(6px, 1fr));
+    grid-template-columns: [] repeat(1, minmax(6px, 1fr)); */
+    /* grid-template-rows: [] repeat(1);
+    grid-template-columns: [] repeat(1); */
     /* grid-template-columns: 1fr; */
     /* grid-template-rows: 400px auto auto; */
     text-align: center;
     /* margin-top: auto; */
-    grid-gap: 20px;
+    grid-gap: 3px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    
     
 }
+
