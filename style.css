@@ -121,7 +121,7 @@ h1 {
 }
 
 .one:hover {
-    background-image: url('/Users/kimbrad/wdi/portfolio-page/img.jpg/gears-memory_resized 1.jpg');
+    background-image: url(/Users/kimbrad/wdi/portfolio-page/img.jpg/gears-memory_resized1.jpg);
     /* background-image: url(http://www.guntherpublications.com/core/wp-content/uploads/2018/04/0b17e73f9c761b91f0e93a3ca98e9359resize=width:200,height:200.jpg); */
     /* background-image: url(https://images.unsplash.com/photo-1537529242089-ead59ac2540e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81179c803a48f5adca9e17f9657074fd&auto=format&fit=crop&w=933&q=80); */
     /* background-color: red; */
