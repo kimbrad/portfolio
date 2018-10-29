@@ -6,11 +6,13 @@
 }
 
 a {
-    color: #386FA4;
+    color: black;
+    /* color: #386FA4; */
     text-align: center;
     text-decoration: none;
     padding: 0;
     margin-top: 50px;
+    size: 10px;
 }
 
 div {
@@ -80,9 +82,9 @@ h1 {
 
 .portfolio-item {
     display: flex;
-    /* background-color: lightblue; */
-    background-color: lightgray;
-    /* background: accent; */
+    background-color: lightblue;
+    /* background-color: lightgray; */
+    background: accent;
     /* background: black; */
     /* color: orange; */
     font-weight: fold-bold;
@@ -95,6 +97,8 @@ h1 {
     z-index: 10;
     opacity: 0.8;
     flex-wrap: wrap;
+    /* opacity: 10px; */
+    
 }
 
 
@@ -121,22 +125,19 @@ h1 {
 }
 
 .one:hover {
-    background-image: url(../portfolio-page/img.jpg/gears-memory_resized\ 1.jpg);
-    /* background-image: url(/Users/kimbrad/wdi/portfolio-page/img.jpg/gears-memory_resized1.jpg); */
-    /* background-image: url(http://www.guntherpublications.com/core/wp-content/uploads/2018/04/0b17e73f9c761b91f0e93a3ca98e9359resize=width:200,height:200.jpg); */
-    /* background-image: url(https://images.unsplash.com/photo-1537529242089-ead59ac2540e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81179c803a48f5adca9e17f9657074fd&auto=format&fit=crop&w=933&q=80); */
-    /* background-color: red; */
+    background-image: url(../portfolio-page/project-images/gears-memory_resized\ 1.jpg);
     background-blend-mode: multiply;
     background-position: center;  
     display: block;
     width: auto;
     height: auto;
-    /* opacity: 1.0; */
+    opacity: 1.0;
 }
 
 
 .project-two:hover {
-    background-image: url(https://media1.tenor.com/images/30754eaff6eff4cb23cbb51319b56738/tenor.gif?itemid=5623874);
+    background-image: url(../portfolio-page/project-images/login-jordan4-display.jpg);
+    /* background-image: url(https://media1.tenor.com/images/30754eaff6eff4cb23cbb51319b56738/tenor.gif?itemid=5623874); */
     background-blend-mode: multiply;
     /* background-color: aliceblue; */
     background-position: center;
@@ -152,11 +153,17 @@ h1 {
 }
 
 .project-four:hover {
-    background-image: url(https://images.unsplash.com/photo-1481246516418-7250f352b06f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b473645ef95f1e1beddf63add5aea907&auto=format&fit=crop&w=800&q=60);
+    background-image: url(../portfolio-page/project-images/my-lp-img.png);
     background-position: center;
     background-blend-mode: multiply;
     display: block;
+    opacity: 1.0;
+
 }
+
+/* .portfolio-item widesquare project-four {
+  max-width: 100px;  
+} */
 /* a.about-me {
     background-color: greenyellow;
 } */
@@ -180,7 +187,13 @@ p {
     text-align: left;
 }
 
-.bio {
+.my-photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.bio-container {
     display: grid;
     grid-template-rows: 400px auto auto;
     grid-gap: 20px;
@@ -192,18 +205,27 @@ p {
 }
 
 @media (min-width: 300px) {
+    grid {display: grid;}
     /* margin-bottom: 5em; */
-    .my-photo {
-        background-image: url('/Users/kimbrad/wdi/portfolio-page/img.jpg/portfolioImg_(1).jpg');
-        grid-template-rows: [] repeat(1, minmax(10px, 1fr));
-        grid-template-columns: [] repeat(1, minmax(10px, 1fr));
+    .my-photo-container {
+        display: flex;
+        display: block;
+        background-image: url(../portfolio-page/project-images/portfolio-img.jpg);
+        flex-direction: column;
+        /* background-image: url('/Users/kimbrad/wdi/portfolio-page/img.jpg/portfolioImg_(1).jpg'); */
+        /* grid-template-rows: [] repeat(1, minmax(10px, 1fr)); */
+        /* grid-template-columns: [] repeat(1, minmax(10px, 1fr)); */
         background-position: center;
         height: 68vh;
-        width: 300vh;
+        width: 500vw;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        border-radius: 3%;       
-}
+        /* justify-content: space-evenly; */
+        border-radius: 3%;  
+        /* display: flex; */
+        flex-wrap: wrap;
+        /* justify-content: left; */
+    }     
+    
 
 }
 
