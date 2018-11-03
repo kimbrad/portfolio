@@ -208,7 +208,7 @@ p {
     .my-photo-container {
         display: flex;
         display: block;
-        background-image: url('../portfolio-page/project-images/portfolio-img.jpg');
+        background-image: url('./project-images/portfolio-img.jpg');
         flex-direction: column;
         /* background-image: url('/Users/kimbrad/wdi/portfolio-page/img.jpg/portfolioImg_(1).jpg'); */
         /* grid-template-rows: [] repeat(1, minmax(10px, 1fr)); */
